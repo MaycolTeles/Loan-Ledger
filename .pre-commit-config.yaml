@@ -10,20 +10,20 @@ repos:
     hooks:
     - id: flake8
       stages: [commit]
-# -   repo: local
-#     hooks:
-#     - id: pytest
-#       name: pytest
-#       language: system
-#       entry: pytest -v --cov=. --cov-report=html
-#       always_run: true
-#       pass_filenames: false
-#       stages: [commit]
+-   repo: local
+    hooks:
+    - id: pytest
+      name: pytest
+      language: system
+      entry: pytest -v --cov=. --cov-report=html
+      always_run: true
+      pass_filenames: false
+      stages: [commit]
 -   repo: local
     hooks:
       - id: requirements
         name: requirements
-        entry: bash -c 'env/bin/pip3 freeze > requirements.txt; git add requirements.txt'
+        entry: bash -c 'venv/bin/pip3 freeze > requirements.txt; git add requirements.txt'
         language: system
         pass_filenames: false
         stages: [commit]
