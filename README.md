@@ -72,4 +72,4 @@ In case this command doesn't work, make sure that you are running it with your v
 
 ## Final Considerations <a name="final-considerations"></a>
 
-If you want to contribute or have a better understand about the code, please make sure to check the documentation [here](#)
+If you want to contribute or have a better understand about the code, please make sure to check the documentation [here](https://maycolteles.github.io/Loan-Ledger/docs/src/index.html)
